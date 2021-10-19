@@ -4,3 +4,36 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+button {
+  padding: 1rem;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  transition: all 1s ease;
+}
+
+button.add {
+  color: rgb(216, 175, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+button.add:hover,
+button.update:hover {
+  color: #ffffff;
+}
+
+button.update {
+  color: rgb(185, 212, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+}
