@@ -90,7 +90,7 @@ button.update {
   border-radius: 4px 0 0 4px;
   border: 2px solid #5d0cff;
   outline: none;
-  width: 250px;
+  width: 260px;
   background: transparent;
   color: #fff;
 }
@@ -113,7 +113,7 @@ button.update {
 
   padding: 16px;
   border-radius: 5px;
-  width: 90%;
+  width: 82%;
 }
 
 .todo-row:nth-child(4n + 1) {
