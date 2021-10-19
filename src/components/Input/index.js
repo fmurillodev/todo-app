@@ -1,4 +1,12 @@
+import React, { useRef, useEffect } from "react";
+
 const Input = ({ placeholder, value, className, onChange }) => {
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    inputRef.current.focus();
+  });
+
   return (
     <input
       type="text"
@@ -8,6 +16,7 @@ const Input = ({ placeholder, value, className, onChange }) => {
       className={className}
       onChange={onChange}
       autoComplete="off"
+      ref={inputRef}
     />
   );
 };
