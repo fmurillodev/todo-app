@@ -68,6 +68,7 @@ const Todo = () => {
               completeTodo={completeTodo}
               removeTodo={removeTodo}
               setEdit={setEdit}
+              isComplete={todo.isComplete}
             />
           ))}
         </div>

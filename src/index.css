@@ -105,6 +105,7 @@ button.update {
   align-items: center;
   margin: 4px auto;
   color: #fff;
+  cursor: pointer;
   background: linear-gradient(
     90deg,
     rgba(255, 118, 20, 1) 0%,
@@ -114,6 +115,15 @@ button.update {
   padding: 16px;
   border-radius: 5px;
   width: 82%;
+}
+
+div.todo-row div.label {
+  width: 100%;
+  text-align: left;
+}
+
+div.todo-row div.label p {
+  margin: 0;
 }
 
 .todo-row:nth-child(4n + 1) {
@@ -165,7 +175,7 @@ button.update {
   }
   div.content-card {
     overflow-y: scroll;
-    height: 55vh
+    height: 55vh;
   }
   input.todo-input {
     width: 45%;
@@ -176,5 +186,4 @@ button.update {
   .todo-row {
     width: 80%;
   }
-  
 }

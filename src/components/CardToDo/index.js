@@ -8,20 +8,25 @@ const CardTodo = ({
   className,
   removeTodo,
   setEdit,
+  isComplete,
 }) => {
   return (
     <div className={className}>
-      <div onClick={() => completeTodo(id)}>{label}</div>
-      <div className="icons">
-        <RiCloseCircleLine
-          onClick={() => removeTodo(id)}
-          className="delete-icon"
-        />
-        <TiEdit
-          className="edit-icon"
-          onClick={() => setEdit({ id, value: label })}
-        />
+      <div className="label" onClick={() => completeTodo(id)}>
+        <p>{label}</p>
       </div>
+      {!isComplete && (
+        <div className="icons">
+          <RiCloseCircleLine
+            onClick={() => removeTodo(id)}
+            className="delete-icon"
+          />
+          <TiEdit
+            className="edit-icon"
+            onClick={() => setEdit({ id, value: label })}
+          />
+        </div>
+      )}
     </div>
   );
 };
