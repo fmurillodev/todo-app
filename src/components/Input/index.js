@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from 'react';
 
 const Input = ({ placeholder, value, className, onChange }) => {
   const inputRef = useRef(null);
@@ -9,13 +9,13 @@ const Input = ({ placeholder, value, className, onChange }) => {
 
   return (
     <input
-      type="text"
+      type='text'
       placeholder={placeholder}
       value={value}
-      name="text"
+      name='text'
       className={className}
       onChange={onChange}
-      autoComplete="off"
+      autoComplete='off'
       ref={inputRef}
     />
   );
